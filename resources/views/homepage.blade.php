@@ -7,7 +7,7 @@
         <h1>Guest Book</h1>
 
         @if( !empty( Session::has('status') ) )
-            <div class="alert alert-success" role="alert">
+            <div class="alert alert-{{ Session::get('class') }}" role="alert">
                 {{ Session::get('status') }}
             </div>
         @endif

@@ -9,7 +9,7 @@
     </div>
     <div class="form-group">
         <label for="comment">Comment</label>
-        <textarea class="form-control" name="comment"></textarea>
+        <textarea class="form-control" name="comment" rows="10"></textarea>
     </div>
 
     {{ csrf_field() }}

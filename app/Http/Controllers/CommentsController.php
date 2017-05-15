@@ -10,7 +10,12 @@ class CommentsController extends Controller
 
 
     function index() {
-        $data = [];
+
+        $comments = Comment::all();
+        
+        $data = [
+            'comments' => $comments,
+        ];
         return view('homepage', $data);
     }
 

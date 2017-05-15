@@ -15,5 +15,9 @@
         <div>
             @include('form')
         </div>
+
+        <div>
+            @include('comments')
+        </div>
     </body>
 </html>

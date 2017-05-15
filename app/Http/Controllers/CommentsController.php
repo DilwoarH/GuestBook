@@ -10,6 +10,10 @@ class CommentsController extends Controller
 
 
     function index() {
-        return view('homepage');
+        $data = [
+            'form' => View('form'),
+        ];
+
+        return view('homepage', $data);
     }
 }

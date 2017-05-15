@@ -11,8 +11,8 @@ class CommentsController extends Controller
 
     function index() {
 
-        $comments = Comment::all();
-        
+        $comments = Comment::orderBy('created_at', 'desc')->get();
+
         $data = [
             'comments' => $comments,
         ];

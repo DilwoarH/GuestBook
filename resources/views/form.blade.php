@@ -12,5 +12,7 @@
         <textarea class="form-control" name="comment"></textarea>
     </div>
 
+    {{ csrf_field() }}
+
     <button type="submit" class="btn btn-default">Submit</button>
 </form>

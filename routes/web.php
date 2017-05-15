@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'CommentsController@index');
+Route::post('/comments/add', 'CommentsController@add');
